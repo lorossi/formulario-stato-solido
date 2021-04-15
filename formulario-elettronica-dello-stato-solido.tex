@@ -1,0 +1,206 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{geometry}
+\usepackage{amsfonts} 
+\usepackage{ccicons}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{cellspace}
+\usepackage{setspace}
+\setlength\cellspacetoplimit{4pt}
+\setlength\cellspacebottomlimit{4pt}
+
+\geometry{left = 2 cm, right = 2 cm, bottom = 2 cm, top = 2 cm}
+\setlength{\parindent}{0em}
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue,
+    colorlinks,
+    linkcolor={black},
+    citecolor={black}
+}
+
+\pagestyle{plain}
+\pagenumbering{gobble}
+
+\title{\Huge Formulario di Elettronica dello stato solido}
+\author{\LARGE Lorenzo Rossi}
+\date{\LARGE Anno Accademico 2020/2021}
+
+
+\begin{document}
+\maketitle
+
+\vspace{18em}
+
+\large
+\begin{doublespacing}\hypersetup{
+	urlcolor=black,
+}\urlstyle{same}
+\centerline{Email: \href{mailto://lorenzo14.rossi@mail.polimi.it}{lorenzo14.rossi@mail.polimi.it}}
+\centerline{GitHub: \url{https://github.com/lorossi}}
+
+\vspace{18em}
+\centerline{Quest'opera è distribuita con Licenza Creative Commons Attribuzione}
+\centerline{Non commerciale 4.0 Internazionale \ccbynceu}
+\centerline{Versione aggiornata al 01/03/2021}
+\end{doublespacing}
+\newpage
+
+
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\newpage
+
+\section{Riguardo al formulario}
+Quest'opera è distribuita con Licenza Creative Commons - Attribuzione Non commerciale 4.0 Internazionale \ccbynceu \newline
+Questo formulario verrà espanso (ed, eventualmente, corretto) periodicamente fino a fine corso (o finché non verrà ritenuto completo). \newline
+Link repository di GitHub: \url{} \newline
+L'ultima versione può essere scaricata direttamente cliccando \href{}{su questo link.}
+
+
+\section{Struttura cristallina}
+\begin{itemize}
+	\item Packing factor \( PF = \dfrac{ \sfrac{4}{3} \cdot \pi r^3}{a^3} \)
+	\item Densità del reticolo \( l = \dfrac{\text{n} ^ \circ \text{atomi / cella}}{\text{area cella}} \)
+	\item Interferenza del passo reticolare (diffrazione alla Bragg) \(  2a \sin \theta = n \lambda \) con \( n \) ordine di diffrazione
+\end{itemize}
+
+\vspace{1cm}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|c|c|c|}
+\hline 
+\textbf{Struttura} & \textbf{Metalli che la presentano in natura} & \textbf{Packing Factor} \\ 
+\hline 
+Cubico & Po & \(\frac{\pi}{6} \approx 0.52 \) \\ 
+\hline 
+GBB & Cr, Fe, Mo, Ta & \(\pi \frac{\sqrt{3}}{8} \approx 0.68 \) \\ 
+\hline 
+FCC & Ag, Au, Cu, Ni, Pb & \(\pi \frac{\sqrt{2}}{6} \approx 0.74 \) \\ 
+\hline 
+\end{tabular} 
+\renewcommand{\arraystretch}{1}
+\vspace{1cm}
+
+\subsection{Indici di Miller} 
+\textbf{Ipotesi:} il piano interseca in \( {m, n, 0} \)
+\begin{itemize}
+	\item Indici di Miller \( {n, m, 0} \)
+	\item Distanza interplanare \( d = \dfrac{a}{\sqrt{n^2+m^2}} \)
+\end{itemize}
+
+\section{Radiazione di corpo nero}
+\begin{itemize}
+	\item Legge di Wien \( \lambda_{ma} \cdot T = K_{\textnormal{wien}} \)
+	\item Legge di Stefan \( \displaystyle \int_{0}^{\inf} R_T d \nu = \sigma T ^ 4 \)
+\end{itemize}
+\subsection{Cavità di corpo nero all'equilibrio}
+\subsubsection{Cavità monodimensionale}
+\begin{itemize}
+	\item Lunghezze d'onda permesse \( a = n \dfrac{\lambda}{2} \)
+	\item Frequenze permesse \( \nu = \dfrac{c}{2a} n \) con \( n \) intero e non nullo
+	\item Free spectral range FSR \( = \dfrac{c}{2a} \)
+\end{itemize}
+
+\section{Onde e particelle}
+\subsection{Onde}
+\begin{itemize}
+	\item Frequenza / lunghezza d'onda \( \nu = \dfrac{c}{\lambda} \)
+	\item Energia associata ad un'onda \( E = h \nu \)
+	\item Vettore d'onda \( k = \dfrac{2 \pi}{h} \)
+	\item Velocità di fase \( v_f = \dfrac{d \omega}{d t}\)
+		\item Velocità di gruppo \( v_g = \dfrac{\partial \omega}{\partial k} = \dfrac{\hbar k}{m} \)
+\end{itemize}
+
+\subsection{Particelle}
+\begin{itemize}
+	\item Energia \( E = E_k + U \)
+	\begin{itemize}
+		\item Energia cinetica \( E_k = \dfrac{1}{2} m v ^ 2 \)
+		\item Principio di equipartizione dell'energia, particella con \( l \) gradi di libertà: \( E_k = \dfrac{l}{2} k T \)
+		\item Energia potenziale di una particella in un potenziale \( V \): \( U = qV \)  
+	\end{itemize}
+	\item Relazione di De Broglie \( \lambda = \dfrac{h}{p} \), \( p = \hbar k \)
+	\item Relazione di dispersione \( E = \dfrac{h ^ 2 k ^ 2}{2 m} \)
+	\item Vettore d'onda \( k = \dfrac{\sqrt{2mE}}{\hbar} \)
+	\item Lunghezza d'onda \( \lambda = \dfrac{h}{\sqrt(2mE} \)
+\end{itemize}
+
+\section{Meccanica quantistica}
+\begin{itemize}
+	\item Principio di indeterminazione di Heisenberg \( \Delta x \Delta p \geq \dfrac{\hbar}{2} \)
+	\item Equazione di Schrödinger \( i \hbar \dfrac{\partial \Psi}{\partial t} (x, t) = \hat{H} \Psi (x,t) \)
+	\item Flusso quantistico \( J = \dfrac{\hbar k}{m} \left| \Psi \right| ^ 2 \)
+\end{itemize}
+
+\subsection{Operatori}
+\begin{itemize}
+	\item Operatore Hamiltoniano \( - \dfrac{\hbar ^ 2}{2mi} \dfrac{\partial ^ 2}{\partial x ^ 2} + V \)
+	\item Operatore quantità di moto (momento) \( \hat{p} = -i \hbar \dfrac{\partial}{\partial x} \)
+	\item Operatore energia cinetica \( \hat{E_{tot}} = -i \dfrac{\hbar ^ 2}{2m} \dfrac{\partial ^ 2}{\partial t ^ 2} \)
+	\item Operatore energia totale \( \hat{E_k} = i \hbar \dfrac{\partial }{\partial t} \)
+	\item Operatore potenziale \( \hat{V} = V \)
+	\item Commutatore \( H = [\hat{A}, \hat{B}] = \hat{A}\hat{B} - \hat{B}\hat{A} = \hat{C} \)
+\end{itemize}
+
+\subsection{Tunneling}
+\begin{itemize}
+	\item Probabilità di tunneling \( \left| T \right| ^ 2 \approx 16 \left( \dfrac{\alpha k}{\alpha^2 + k^2} \right) ^ 2  \exp{-2 \alpha a} \approx \exp{-2 \alpha a} \)
+	\item Tempo medio di tunneling \( <t> = \dfrac{t_{a/r}}{p_t} = \dfrac{2 a}{v p_{\text{tun}}} \)
+	\item Approssimazione WKB
+	\begin{itemize}
+		\item Probabilità \( \left| T \right| ^ 2 = P_T = \exp{ \left\{ -2 \alpha a \right\} } \)
+		\item Penetrazione media \( x_p = \dfrac{\hbar}{\sqrt{2 m (V_0 - E)}} = \dfrac{1}{\alpha} \)
+		\item \textbf{L'approssimazione è valida se e solo se} \( \alpha a \gg 1 \)
+		\item \textbf{Caso particolare: barriera triangolare} \( P_T = \exp\left\{ - \dfrac{4}{3} \dfrac{\sqrt{2 m}}{\hbar}  \dfrac{\Phi ^ {\sfrac{3}{2}}}{qF} \right\} \)
+	\end{itemize}
+	\item Approssimazione di Follower-Nonditeim
+	\begin{itemize}
+		\item 
+	\end{itemize}		 
+\end{itemize}
+
+\subsection{Incidenza} 
+\begin{itemize}
+	\item Coefficiente di riflessione \( R = \left( \dfrac{k_1 - k_2}{k_1 + k_2} \right) ^ 2 \)
+	\item Coefficiente di trasmissione \( T = \left( \dfrac{2 k_1}{k_1 + k_2} \right) ^ 2 = 1 - R ^ 2 \)
+\end{itemize}
+
+\subsection{Buca di potenziale}
+
+\subsubsection{A pareti infinite}
+\begin{itemize}
+	\item Autovalori \( E_n = \dfrac{h^2}{8 m a ^2} n^2 \)
+\end{itemize}
+
+\subsubsection{A pareti finite}
+\begin{itemize}
+	\item Funzioni pari \( \tan\left( \dfrac{a}{2 \hbar} \sqrt{2mE} \right) = \sqrt{\dfrac{V_0 - E}{E}} \)
+	\item Funzioni dispari \( \tan\left( \dfrac{a}{2 \hbar} \sqrt{2mE} \right) = - \sqrt{\dfrac{E}{V_0 - E}} \)
+	\item La soluzione delle equazioni avviene per via grafica
+\end{itemize} 
+
+\subsubsection{Parabolica}
+\begin{itemize}
+	\item Profilo di potenziale \(U = \dfrac{1}{2} \alpha x ^ 2 \)
+	\item Pulsazione caratteristica \( \omega = \sqrt{\dfrac{\alpha}{m}} \)
+	\item Autovalori \( E_n = ( n + \dfrac{1}{2} ) \hbar \omega \)
+\end{itemize}
+
+\subsubsection{Coppie di buche}
+\begin{itemize}
+	\item Funzione degli autovalori \( \tan\left( k \dfrac{a}{2} \right) = - \dfrac{\hbar ^2 k}{m U_0} \)
+	\item Proporzionalità della ddp \( | \psi | ^ 2 \propto \cos \left( \dfrac{E_2 - E_1}{\hbar} t \right) = \cos \left( 2 \pi \dfrac{E_2 - E_1}{h} t \right)  \)
+	\begin{itemize}
+		\item Oscillazione degli autovalori \( \omega = \dfrac{E_2 - E_1}{\hbar} \)
+		\item Frequenza degli autovalori \( \nu = \dfrac{E_2 - E_1}{h} \)
+	\end{itemize}
+	
+\end{itemize}
+
+\end{document}
