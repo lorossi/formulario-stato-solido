@@ -4,12 +4,12 @@ Un formulario per il corso di Elettronica dello Stato Solido - professore Daniel
 
 ## Ultima versione
 
-**AGGIORNATO AL 19/04/2021** - [Download diretto qua](https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf)
+**AGGIORNATO AL 20/04/2021** - [Download diretto qua](https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf)
 
 ## Contenuti
 
 1. *Riguardo al formulario*
-1. *Richiami di matematica*
+1. *Richiami di base*
 1. *Struttura cristallina*
 1. *Radiazione di corpo nero*
 1. *Onde e particelle*

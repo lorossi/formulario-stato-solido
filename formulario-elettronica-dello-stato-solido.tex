@@ -47,7 +47,7 @@
   \vspace{18em}
   \centerline{Quest'opera è distribuita con Licenza Creative Commons Attribuzione}
   \centerline{Non commerciale 4.0 Internazionale \ccbynceu}
-  \centerline{Versione aggiornata al 19/04/2021}
+  \centerline{Versione aggiornata al 20/04/2021}
 \end{doublespacing}
 \newpage
 
@@ -65,11 +65,18 @@ Link repository di GitHub: \url{https://github.com/lorossi/formulario-stato-soli
 L'ultima versione può essere scaricata direttamente cliccando \href{https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf}{su questo link.} \newline
 In questo formulario ho cercato prima di tutto di mettere le formule importanti per la risoluzione degli esercizi, preferendole a quelle utili alla comprensione della materia.
 
-\section{Richiami di Matematica}
+\section{Richiami di Base}
 \subsection{Serie}
 \begin{itemize}
   \item Serie geometrica \( \displaystyle  s_n = \sum_{n=0}^{+\inf} q^n = 1 + q + q^2 + ... \) converge a \( s_n = \dfrac{1}{1-q} \) se \( |q| < 1 \)
   \item Serie armonica \( \displaystyle s_n = \sum_{n=0}^{+\inf} \dfrac{1}{n ^ \alpha} \) converge se \( \alpha > 1 \)
+\end{itemize}
+
+\subsection{Elettromagnetismo}
+\begin{itemize}
+  \item Forza \( |F| = \dfrac{|V|}{|x|} \)
+  \item Forza vettoriale \( \vec{F} = - \vec{\nabla} V = -\dfrac{1}{q} \vec{\nabla} U \)
+  \item Campo elettrico \( E = -q V \)
 \end{itemize}
 
 \section{Struttura cristallina}
@@ -96,6 +103,8 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
 \end{center}
 \renewcommand{\arraystretch}{1}
 \vspace{1cm}
+
+\newpage
 
 \subsection{Indici di Miller}
 \textbf{Ipotesi:} il piano interseca in \( \{m, n, 0\} \)
@@ -133,14 +142,20 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item Formula generale \( \Psi(x, t) = \int{g(k) e^{i (kx- \omega t)} dk}  \)
   \item Densità di probabilità \( \left| \Psi(x, t) \right| ^ 2 = \exp\left\{-\dfrac{(x-v_g t) ^ 2}{2 \alpha (1 + \sfrac{\beta^2 t^2}{\alpha^2})}\right\} \sqrt{\dfrac{\pi^2}{\alpha^2 + \beta^2 t^2}} \)
   \item Deviazione standard \( \sigma_x (t) = \sqrt{ \dfrac{\alpha^2 + \beta^2 t^2}{\alpha} } \)
-  \item Il picco si sposta con \( v = v_g \)
+  \item Pacchetto gaussiano:
+        \begin{itemize}
+          \item Velocità \( v_g = \dfrac{\partial \omega}{\partial k} \)
+          \item Dispersione \(\beta = \dfrac{1}{2} \dfrac{\partial ^ 2 E}{\partial ^ 2 k} \)
+          \item Oscillazione \( \omega = \omega_0 + v_g \cdot (k - k_0) + \beta \cdot (k - k_o) ^ 2 \)
+          \item Il picco si sposta con \( v = v_g \)
+        \end{itemize}
 \end{itemize}
 
 \subsection{Particelle}
 \begin{itemize}
   \item Energia \( E = E_k + U \)
         \begin{itemize}
-          \item Energia cinetica \( E_k = \dfrac{1}{2} m v ^ 2 \)
+          \item Energia cinetica \( E_k = \dfrac{1}{2} m v ^ 2 = \dfrac{h ^ 2}{2 m \lambda }\)
           \item Principio di equipartizione dell'energia, particella con \( l \) gradi di libertà: \( E_k = \dfrac{l}{2} k T \)
           \item Energia potenziale di una particella in un potenziale \( V \): \( U = qV \)
         \end{itemize}
@@ -207,7 +222,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 
 \subsubsection{A pareti infinite}
 \begin{itemize}
-  \item Autovalori \( E_n = \dfrac{h^2}{8 m a ^2} n^2 \)
+  \item Autovalori \( E_n = \dfrac{h^2}{8 m a ^2} n^2 \), spaziatura \( \propto n^2 \)
 \end{itemize}
 
 \subsubsection{A pareti finite}
@@ -221,7 +236,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 \begin{itemize}
   \item Profilo di potenziale \( U = \dfrac{1}{2} \alpha x ^ 2 \)
   \item Pulsazione caratteristica \( \omega = \sqrt{\dfrac{\alpha}{m}} \), con \( alpha \) coefficiente del quadrato di \( x \)
-  \item Autovalori \( E_n = ( n + \dfrac{1}{2} ) \, \hbar \omega \)
+  \item Autovalori \( E_n = \left( n + \dfrac{1}{2} \right) \, \hbar \omega \),  spaziatura \( \propto n \)
 \end{itemize}
 
 \subsubsection{Coppie di buche}
@@ -238,6 +253,8 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 \begin{itemize}
   \item Formula fondamentale \( \dfrac{dk}{dt} = \dfrac{\mathfrak{F} }{\hbar} \), \( \mathfrak{F}  \) forza applicata
   \item Massa efficace dell'elettrone \( m ^ \ast = \dfrac{ \mathfrak{F} }{a} = \dfrac{\hbar ^ 2}{\dfrac{\partial ^ 2 E}{\partial t ^ 2}} \)
+  \item Velocità termica \( v_{th} = \sqrt{\dfrac{3 k T}{m}} \)
+  \item Libero cammino medio \( \lambda = v_{th} \cdot \tau_m \)
 \end{itemize}
 
 \end{document}
