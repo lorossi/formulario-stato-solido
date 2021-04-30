@@ -47,7 +47,7 @@
   \vspace{18em}
   \centerline{Quest'opera è distribuita con Licenza Creative Commons Attribuzione}
   \centerline{Non commerciale 4.0 Internazionale \ccbynceu}
-  \centerline{Versione aggiornata al 20/04/2021}
+  \centerline{Versione aggiornata al 28/04/2021}
 \end{doublespacing}
 \newpage
 
@@ -252,9 +252,22 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 \section{Teoria semiclassica del trasporto}
 \begin{itemize}
   \item Formula fondamentale \( \dfrac{dk}{dt} = \dfrac{\mathfrak{F} }{\hbar} \), \( \mathfrak{F}  \) forza applicata
-  \item Massa efficace dell'elettrone \( m ^ \ast = \dfrac{ \mathfrak{F} }{a} = \dfrac{\hbar ^ 2}{\dfrac{\partial ^ 2 E}{\partial t ^ 2}} \)
+        \begin{itemize}
+          \item Modello di Drude \( \dfrac{dk}{dt} -\dfrac{k}{\tau_m}= \dfrac{\mathfrak{F} }{\hbar} \)
+          \item Soluzione \( k = \dfrac{q \tau_m F}{\hbar} \left( 1 - e^{\sfrac{t}{\tau_m}} \right) \)
+        \end{itemize}
+  \item Oscillazioni di Bloch \( \omega = \dfrac{a q F}{\hbar} \), \( \nu = \dfrac{a q F}{h} \) con \( a \) proveniente dalla relazione di dispersione
+  \item Massa efficace dell'elettrone \( m ^ \ast = \dfrac{ \mathfrak{F} }{a} = \dfrac{\hbar ^ 2}{\dfrac{\partial ^ 2 E}{\partial k ^ 2}} \)
   \item Velocità termica \( v_{th} = \sqrt{\dfrac{3 k T}{m}} \)
   \item Libero cammino medio \( \lambda = v_{th} \cdot \tau_m \)
+\end{itemize}
+
+\subsection{Formule valide sia per lacune che per elettroni}
+\begin{itemize}
+  \item Mobilità \( \mu = \dfrac{q \tau}{m ^ *} \)
+  \item Conducibilità \( \sigma = q n \mu \)
+  \item Resistività \( \rho = \dfrac{1}{\sigma} \)
+  \item Densità di corrente \( j = q n \mu F = \sigma F \)
 \end{itemize}
 
 \end{document}
