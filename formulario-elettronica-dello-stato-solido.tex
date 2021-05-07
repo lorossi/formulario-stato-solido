@@ -47,7 +47,7 @@
   \vspace{18em}
   \centerline{Quest'opera è distribuita con Licenza Creative Commons Attribuzione}
   \centerline{Non commerciale 4.0 Internazionale \ccbynceu}
-  \centerline{Versione aggiornata al 28/04/2021}
+  \centerline{Versione aggiornata al 07/05/2021}
 \end{doublespacing}
 \newpage
 
@@ -77,6 +77,7 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item Forza \( |F| = \dfrac{|V|}{|x|} \)
   \item Forza vettoriale \( \vec{F} = - \vec{\nabla} V = -\dfrac{1}{q} \vec{\nabla} U \)
   \item Campo elettrico \( E = -q V \)
+  \item Energia \( \delta E = q F \delta x \), \( \dfrac{\partial E}{\partial T} = q F v_g  \)
 \end{itemize}
 
 \section{Struttura cristallina}
@@ -251,20 +252,34 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 
 \section{Teoria semiclassica del trasporto}
 \begin{itemize}
-  \item Formula fondamentale \( \dfrac{dk}{dt} = \dfrac{\mathfrak{F} }{\hbar} \), \( \mathfrak{F}  \) forza applicata
-        \begin{itemize}
-          \item Modello di Drude \( \dfrac{dk}{dt} -\dfrac{k}{\tau_m}= \dfrac{\mathfrak{F} }{\hbar} \)
-          \item Soluzione \( k = \dfrac{q \tau_m F}{\hbar} \left( 1 - e^{\sfrac{t}{\tau_m}} \right) \)
-        \end{itemize}
-  \item Oscillazioni di Bloch \( \omega = \dfrac{a q F}{\hbar} \), \( \nu = \dfrac{a q F}{h} \) con \( a \) proveniente dalla relazione di dispersione
-  \item Massa efficace dell'elettrone \( m ^ \ast = \dfrac{ \mathfrak{F} }{a} = \dfrac{\hbar ^ 2}{\dfrac{\partial ^ 2 E}{\partial k ^ 2}} \)
+  \item Formula fondamentale \( \dfrac{dk}{dt} = \dfrac{F}{\hbar} \)
+  \item Soluzione della formula fondamentale \( k = \dfrac{F}{\hbar} t + k_0 \)
   \item Velocità termica \( v_{th} = \sqrt{\dfrac{3 k T}{m}} \)
+  \item Livello di Fermi \( E_f = \dfrac{ \left(3 \pi^2 n\right)^{\sfrac{2}{3}} }{2 m_n^*} \hbar ^ 2 \)
+\end{itemize}
+
+\subsection{Tight Binding}
+\begin{itemize}
+  \item Massa efficace dell'elettrone \( m ^ \ast = \dfrac{ \mathfrak{F} }{a} = \dfrac{\hbar ^ 2}{\dfrac{\partial ^ 2 E}{\partial k ^ 2}} \)
+  \item Relazione di dispersione \( E(k) = E_{0-} + 2 \gamma \cos(ka) \)
+  \item Oscillazioni di Bloch \( \omega = \dfrac{a q F}{\hbar} \), \( \nu = \dfrac{a q F}{h} \)
   \item Libero cammino medio \( \lambda = v_{th} \cdot \tau_m \)
+  \item Modello di Drude:
+        \begin{itemize}
+          \item Formula \( \dfrac{dk}{dt} + \dfrac{k}{\tau_m}= \dfrac{F}{\hbar} \) \textbf{vale solo per gli elettroni}
+          \item Soluzione generale \( k = \dfrac{q \tau_m F}{\hbar} \left( 1 - e^{\sfrac{t}{\tau_m}} \right) \)
+          \item Soluzione stazionaria \( \dfrac{\partial k}{\partial t} = 0 \rightarrow \bar{k} = \dfrac{q F}{\hbar} \tau_m \)
+        \end{itemize}
+\end{itemize}
+
+\subsection{Weak binding}
+\begin{itemize}
+  \item Valore di aspettazione dell'energia al margine della funzione di Brillouin \( < E > = \dfrac{\hbar ^ 2}{2 m} \left(\dfrac{\pi}{a}\right) ^ 2 = E_n^+ - | u_n | \)
 \end{itemize}
 
 \subsection{Formule valide sia per lacune che per elettroni}
 \begin{itemize}
-  \item Mobilità \( \mu = \dfrac{q \tau}{m ^ *} \)
+  \item Mobilità \( \mu = \dfrac{q \tau_m}{m ^ *} \)
   \item Conducibilità \( \sigma = q n \mu \)
   \item Resistività \( \rho = \dfrac{1}{\sigma} \)
   \item Densità di corrente \( j = q n \mu F = \sigma F \)
