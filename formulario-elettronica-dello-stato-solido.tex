@@ -47,7 +47,7 @@
   \vspace{18em}
   \centerline{Quest'opera è distribuita con Licenza Creative Commons Attribuzione}
   \centerline{Non commerciale 4.0 Internazionale \ccbynceu}
-  \centerline{Versione aggiornata al 07/05/2021}
+  \centerline{Versione aggiornata al 13/05/2021}
 \end{doublespacing}
 \newpage
 
@@ -255,7 +255,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
   \item Formula fondamentale \( \dfrac{dk}{dt} = \dfrac{F}{\hbar} \)
   \item Soluzione della formula fondamentale \( k = \dfrac{F}{\hbar} t + k_0 \)
   \item Velocità termica \( v_{th} = \sqrt{\dfrac{3 k T}{m}} \)
-  \item Livello di Fermi \( E_f = \dfrac{ \left(3 \pi^2 n\right)^{\sfrac{2}{3}} }{2 m_n^*} \hbar ^ 2 \)
+  \item Concentrazione intrinseca \( n_i = \sqrt{N_C N_V} \exp{\left\{ - \dfrac{E_C - E_V}{2 K T}\right\}} \)
 \end{itemize}
 
 \subsection{Tight Binding}
@@ -270,6 +270,15 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
           \item Soluzione generale \( k = \dfrac{q \tau_m F}{\hbar} \left( 1 - e^{\sfrac{t}{\tau_m}} \right) \)
           \item Soluzione stazionaria \( \dfrac{\partial k}{\partial t} = 0 \rightarrow \bar{k} = \dfrac{q F}{\hbar} \tau_m \)
         \end{itemize}
+  \item Masse DOS:
+        \begin{itemize}
+          \item Elettroni \( {m^\star} ^ {\sfrac{3}{2}} = g \cdot {m^\star_l} ^ {\sfrac{1}{2}} \, m^\star_t \)
+          \item Lacune \( {m^\star} ^ {\sfrac{3}{2}} = {m^\star_{hh}} ^ {\sfrac{3}{2}} + {m^\star_{lh}} ^ {\sfrac{3}{2}} \)
+        \end{itemize}
+  \item Masse di conduzione:
+        \begin{itemize}
+          \item Elettroni \( m_c^\star = \dfrac{3}{\dfrac{1}{m_l^\star} + \dfrac{2}{m_t^\star}} \)
+        \end{itemize}
 \end{itemize}
 
 \subsection{Weak binding}
@@ -279,10 +288,17 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 
 \subsection{Formule valide sia per lacune che per elettroni}
 \begin{itemize}
-  \item Mobilità \( \mu = \dfrac{q \tau_m}{m ^ *} \)
+  \item Mobilità \( \mu = \dfrac{q \tau_m}{m^\star} \)
+  \item Velocità di deriva \( v = \mu F \)
   \item Conducibilità \( \sigma = q n \mu \)
   \item Resistività \( \rho = \dfrac{1}{\sigma} \)
   \item Densità di corrente \( j = q n \mu F = \sigma F \)
+\end{itemize}
+
+\subsection{Livelli di energia}
+\begin{itemize}
+  \item Livello di Fermi \( E_f = \dfrac{ \left(3 \pi^2 n\right)^{\sfrac{2}{3}} }{2 m_n^*} \hbar ^ 2 \)
+  \item Livello di energia intrinseco \( E_i = \dfrac{E_C + E_V}{2} + \dfrac{K T}{2} \ln\left( \dfrac{m_p^*}{m_n^*}\right) \)
 \end{itemize}
 
 \end{document}
