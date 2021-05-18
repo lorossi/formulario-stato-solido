@@ -4,7 +4,7 @@ Un formulario per il corso di Elettronica dello Stato Solido - professore Daniel
 
 ## Ultima versione
 
-**AGGIORNATO AL 13/05/2021** - [Download diretto qua](https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf)
+**AGGIORNATO AL 18/05/2021** - [Download diretto qua](https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf)
 
 ## Contenuti
 

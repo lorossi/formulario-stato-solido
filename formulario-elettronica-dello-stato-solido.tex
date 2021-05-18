@@ -47,7 +47,7 @@
   \vspace{18em}
   \centerline{Quest'opera è distribuita con Licenza Creative Commons Attribuzione}
   \centerline{Non commerciale 4.0 Internazionale \ccbynceu}
-  \centerline{Versione aggiornata al 13/05/2021}
+  \centerline{Versione aggiornata al 18/05/2021}
 \end{doublespacing}
 \newpage
 
@@ -65,6 +65,8 @@ Link repository di GitHub: \url{https://github.com/lorossi/formulario-stato-soli
 L'ultima versione può essere scaricata direttamente cliccando \href{https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf}{su questo link.} \newline
 In questo formulario ho cercato prima di tutto di mettere le formule importanti per la risoluzione degli esercizi, preferendole a quelle utili alla comprensione della materia.
 
+\newpage
+
 \section{Richiami di Base}
 \subsection{Serie}
 \begin{itemize}
@@ -80,6 +82,8 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item Energia \( \delta E = q F \delta x \), \( \dfrac{\partial E}{\partial T} = q F v_g  \)
 \end{itemize}
 
+\newpage
+
 \section{Struttura cristallina}
 \begin{itemize}
   \item Packing factor \( PF = \dfrac{ \sfrac{4}{3} \cdot \pi r^3}{a^3} \)
@@ -87,6 +91,7 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item Interferenza del passo reticolare (diffrazione alla Bragg) \(  2a \sin \theta = n \lambda \) con \( n \) ordine di diffrazione
 \end{itemize}
 
+\subsection{Packing factor}
 \vspace{1cm}
 \renewcommand{\arraystretch}{2}
 \begin{center}
@@ -105,8 +110,6 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
 \renewcommand{\arraystretch}{1}
 \vspace{1cm}
 
-\newpage
-
 \subsection{Indici di Miller}
 \textbf{Ipotesi:} il piano interseca in \( \{m, n, 0\} \)
 \begin{itemize}
@@ -114,19 +117,22 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item Distanza interplanare \( d = \dfrac{a}{\sqrt{n^2+m^2}} \)
 \end{itemize}
 
+\newpage
+
 \section{Radiazione di corpo nero}
 \begin{itemize}
   \item Legge di Wien \( \lambda_{p} \cdot T = c_{\textnormal{wien}} \)
-  \item Legge di Stefan-Boltzman \( \displaystyle \int_{0}^{\inf} R_T d \nu = \sigma T ^ 4 \)
+  \item Legge di Stefan-Boltzman \( \displaystyle \int\limits_{0}^{\inf} R_T d \nu = \sigma T ^ 4 \)
   \item Potenza emessa dal corpo nero \( P = \sigma T^4 A = R A \), con \(A\) area della superficie del corpo
 \end{itemize}
-\subsection{Cavità di corpo nero all'equilibrio}
-\subsubsection{Cavità monodimensionale}
+\subsection{Cavità di corpo nero all'equilibrio, monodimensionale}
 \begin{itemize}
   \item Lunghezze d'onda permesse \( a = n \dfrac{\lambda}{2} \)
   \item Frequenze permesse \( \nu = \dfrac{c}{2a} n \) con \( n \) intero e non nullo
   \item Free spectral range \( \text{FSR} = \nu_n - \nu_{n-1} = \dfrac{c}{2a} \)
 \end{itemize}
+
+\newpage
 
 \section{Onde e particelle}
 \subsection{Onde}
@@ -165,6 +171,8 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item Vettore d'onda \( k = \dfrac{\sqrt{2mE}}{\hbar} \)
   \item Lunghezza d'onda \( \lambda = \dfrac{h}{\sqrt{2mE}} \)
 \end{itemize}
+
+\newpage
 
 \section{Meccanica quantistica}
 \begin{itemize}
@@ -240,6 +248,8 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
   \item Autovalori \( E_n = \left( n + \dfrac{1}{2} \right) \, \hbar \omega \),  spaziatura \( \propto n \)
 \end{itemize}
 
+\newpage
+
 \subsubsection{Coppie di buche}
 \begin{itemize}
   \item Funzione degli autovalori \( \tan\left( k \dfrac{a}{2} \right) = - \dfrac{\hbar ^2 k}{m U_0} \)
@@ -254,7 +264,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 \begin{itemize}
   \item Formula fondamentale \( \dfrac{dk}{dt} = \dfrac{F}{\hbar} \)
   \item Soluzione della formula fondamentale \( k = \dfrac{F}{\hbar} t + k_0 \)
-  \item Velocità termica \( v_{th} = \sqrt{\dfrac{3 k T}{m}} \)
+  \item Velocità termica \( \displaystyle v_{th} = \sqrt{\dfrac{3 k T}{m}} \)
   \item Concentrazione intrinseca \( n_i = \sqrt{N_C N_V} \exp{\left\{ - \dfrac{E_C - E_V}{2 K T}\right\}} \)
 \end{itemize}
 
@@ -277,13 +287,38 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
         \end{itemize}
   \item Masse di conduzione:
         \begin{itemize}
-          \item Elettroni \( m_c^\star = \dfrac{3}{\dfrac{1}{m_l^\star} + \dfrac{2}{m_t^\star}} \)
+          \item Elettroni \( \dfrac{\textnormal{n° di masse}}{m_c^\star} = \dfrac{\textnormal{n° di masse longitudinali}}{m_l^\star} + \dfrac{\textnormal{n° di masse trasversali}}{m_t^\star}\)
+          \item Nel silicio \( m_c^\star = \dfrac{3}{\dfrac{1}{m_l^\star} + \dfrac{2}{m_t^\star}} \)
         \end{itemize}
+\end{itemize}
+
+\subsubsection{Semiconduttori}
+\begin{itemize}
+  \item Distribuzione di Fermi \( f(E) = \dfrac{1}{1+e^{\dfrac{E-E_F}{kT}}} \)
+  \item Densità di stati di energia:
+        \begin{itemize}
+          \item Caso 1D \( \displaystyle g(E) = \dfrac{1}{\pi \hbar} \sqrt{\dfrac{2 m^\star}{E-E_F}} \)
+          \item Caso 2D \( g(E) = \dfrac{m^\star}{\hbar^ 2 \pi} \)
+          \item Caso 3D \( \displaystyle g(E) = \dfrac{(2 m^\star) ^ {\sfrac{3}{2}}}{2 \pi^2 \hbar^3} \sqrt{E-E_F} \)
+        \end{itemize}
+  \item Densità di portatori:
+        \begin{itemize}
+          \item Elettroni \( \displaystyle n = \int\limits_{E_F}^{\infty} g(E) f(E) dE \)
+          \item Lacune \( \displaystyle p = \int\limits_{0}^{E_F} g(E) \left( 1- f(E) \right) dE \)
+        \end{itemize}
+  \item Energia media dell'elettrone \( \displaystyle \left<E\right> = \dfrac{1}{n} \int\limits_{E_F}^{\inf} E \cdot g(E) f(E) dE \), caso 3D \(\dfrac{3}{5} E_F \)
+  \item Energia cinetica dell'elettrone \( E_k = \dfrac{\hbar^2 k^2}{2 m_n^\star} \)
 \end{itemize}
 
 \subsection{Weak binding}
 \begin{itemize}
   \item Valore di aspettazione dell'energia al margine della funzione di Brillouin \( < E > = \dfrac{\hbar ^ 2}{2 m} \left(\dfrac{\pi}{a}\right) ^ 2 = E_n^+ - | u_n | \)
+\end{itemize}
+
+\subsubsection{Metalli}
+\begin{itemize}
+  \item Energia di Fermi \( E_F(T) = E_F(0 K) \left[ 1 - \dfrac{\pi ^ 2}{12} \left( \dfrac{kT}{E_F(0 K)}\right) ^ 2\right]\)
+  \item Densità di portatori \textbf{approssimazione} \( n \approx \int\limits_{0}^{E_F} g(E) dE \)
 \end{itemize}
 
 \subsection{Formule valide sia per lacune che per elettroni}
