@@ -4,7 +4,7 @@ Un formulario per il corso di Elettronica dello Stato Solido - professore Daniel
 
 ## Ultima versione
 
-**AGGIORNATO AL 18/05/2021** - [Download diretto qua](https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf)
+**AGGIORNATO AL 22/06/2021** - [Download diretto qua](https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf)
 
 ## Contenuti
 
@@ -14,7 +14,9 @@ Un formulario per il corso di Elettronica dello Stato Solido - professore Daniel
 1. *Radiazione di corpo nero*
 1. *Onde e particelle*
 1. *Meccanica quantistica*
-1. *Teoria semiclassica del trasporto*
+1. *Teoria semi classica del trasporto*
+1. *Correnti macroscopiche*
+1. *Distribuzioni*
 
 ## Licenza
 
