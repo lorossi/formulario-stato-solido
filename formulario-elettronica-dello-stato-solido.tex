@@ -65,7 +65,7 @@ Link repository di GitHub: \url{https://github.com/lorossi/formulario-stato-soli
 L'ultima versione può essere scaricata direttamente cliccando \href{https://github.com/lorossi/formulario-stato-solido/raw/master/formulario-elettronica-dello-stato-solido.pdf}{su questo link.} \newline
 In questo formulario ho cercato prima di tutto di mettere le formule importanti per la risoluzione degli esercizi, preferendole a quelle utili alla comprensione della materia.
 
-\newpage
+\bigskip
 
 \section{Richiami di Base}
 \subsection{Serie}
@@ -111,6 +111,11 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
 \vspace{1cm}
 
 \subsection{Indici di Miller}
+\begin{itemize}
+  \item Distanza interplanare \( \displaystyle \dfrac{a}{\sqrt{m ^ 2 + n ^ 2 + p ^ 2}} \)
+\end{itemize}
+
+\subsubsection{Caso particolare}
 \textbf{Ipotesi:} il piano interseca in \( \{m, n, 0\} \)
 \begin{itemize}
   \item Indici di Miller \( \{n, m, 0\} \)
@@ -146,8 +151,8 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
 
 \subsubsection{Pacchetti d'onda}
 \begin{itemize}
-  \item Formula generale \( \Psi(x, t) = \int{g(k) e^{i (kx- \omega t)} dk}  \)
-  \item Densità di probabilità \( \left| \Psi(x, t) \right| ^ 2 = \exp\left\{-\dfrac{(x-v_g t) ^ 2}{2 \alpha (1 + \sfrac{\beta^2 t^2}{\alpha^2})}\right\} \sqrt{\dfrac{\pi^2}{\alpha^2 + \beta^2 t^2}} \)
+  \item Formula generale \( \displaystyle \Psi(x, t) = \int{g(k) e^{i (kx- \omega t)} dk}  \)
+  \item Densità di probabilità \( \left| \Psi(x, t) \right| ^ 2 = e ^ {-\dfrac{(x-v_g t) ^ 2}{2 \alpha (1 + \sfrac{\beta^2 t^2}{\alpha^2})}} \sqrt{\dfrac{\pi^2}{\alpha^2 + \beta^2 t^2}} \)
   \item Deviazione standard \( \sigma_x (t) = \sqrt{ \dfrac{\alpha^2 + \beta^2 t^2}{\alpha} } \)
   \item Pacchetto gaussiano:
         \begin{itemize}
@@ -157,6 +162,8 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
           \item Il picco si sposta con \( v = v_g \)
         \end{itemize}
 \end{itemize}
+
+\newpage
 
 \subsection{Particelle}
 \begin{itemize}
@@ -189,7 +196,10 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item La funzione d'onda si ripete a meno di un fattore di fase \( \psi(x+a) = \psi(x) e^{ i k  a} \)
   \item La densità di probabilità è periodica \( \left| \psi(x+a) \right|^2 = \left| \psi(x)  \right|^2 \)
 \end{itemize}
-\textbf{Allora:} \( \left| \psi(x) \right| = u_k(x) e^{ -ikx } \) con \( u_k(x) \) funzione di Bloch \textit{(periodica)}, quindi \( u_k (x+a) = u_k(x).\) e \( e^{ -ikx } \) inviluppo. \newline \textit{Normalmente è costruita da \(\sin^2\) o \(\cos^2\), con i massimi in corrispondenza dei centri delle barriere}. \newline
+\textbf{Allora:} \( \left| \psi(x) \right| = u_k(x) e^{ -ikx } \) con \( u_k(x) \) funzione di Bloch \textit{(periodica)}, quindi \( u_k (x+a) = u_k(x).\) e \( e^{ -ikx } \) inviluppo.
+\newline
+\textit{Normalmente è costruita da \(\sin^2(x)\) o \(\cos^2(x)\), con i massimi in corrispondenza dei centri delle barriere}. \newline
+\smallskip
 Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasamento.
 
 \subsection{Operatori}
@@ -205,22 +215,24 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
         \end{itemize}
 \end{itemize}
 
+\newpage
+
 \subsection{Tunnelling}
 \begin{itemize}
-  \item Probabilità di tunnelling \( \left| T \right| ^ 2 \approx 16 \left( \dfrac{\alpha k}{\alpha^2 + k^2} \right) ^ 2  \exp{ \left\{ -2 \alpha a \right\} } \approx \exp{\left\{-2 \alpha a\right\}} \)
+  \item Probabilità di tunnelling \( \left| T \right| ^ 2 \approx 16 \left( \dfrac{\alpha k}{\alpha^2 + k^2} \right) ^ 2  e^{  -2 \alpha a  } \approx e^{-2 \alpha a} \)
         \begin{itemize}
           \item Trasmissione risonante \( p = |  T | ^ 2 = 1 \)
         \end{itemize}
   \item Tempo medio di tunnelling \( \langle t \rangle = \dfrac{t_{a/r}}{p_t} = \dfrac{2 a}{v p_{\text{tun}}} \)
   \item Approssimazione WKB:
         \begin{itemize}
-          \item Probabilità \( p = \left| T \right| ^ 2 = P_T = \exp{ \left\{ -2 \alpha a \right\} } \)
+          \item Probabilità \( p = \left| T \right| ^ 2 = P_T = e^{-2 \alpha a  } \)
           \item Penetrazione media \( x_p = \dfrac{\hbar}{\sqrt{2 m (V_0 - E)}} = \dfrac{1}{\alpha} \)
           \item \textbf{L'approssimazione è valida se e solo se} \( \alpha a \gg 1 \)
         \end{itemize}
   \item Approssimazione di Fowler–Nordheim \textbf{barriera triangolare}
         \begin{itemize}
-          \item Probabilità \( P_T = \exp\left\{ - \dfrac{4}{3} \dfrac{\sqrt{2m}}{\hbar q V} W (V - E) ^ {\sfrac{3}{2}} \right\} \)
+          \item Probabilità \( P_T = e^{ - \dfrac{4}{3} \dfrac{\sqrt{2m}}{\hbar q V} W (V - E) ^ {\sfrac{3}{2}} } \)
         \end{itemize}
 \end{itemize}
 
@@ -229,6 +241,8 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
   \item Coefficiente di riflessione \( R = \left( \dfrac{k_1 - k_2}{k_1 + k_2} \right) ^ 2 \)
   \item Coefficiente di trasmissione \( T = \left( \dfrac{2 k_1}{k_1 + k_2} \right) ^ 2 = 1 - R ^ 2 \)
 \end{itemize}
+
+\newpage
 
 \subsection{Buca di potenziale}
 
@@ -246,12 +260,10 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 
 \subsubsection{Parabolica}
 \begin{itemize}
-  \item Profilo di potenziale \( U = \dfrac{1}{2} \alpha x ^ 2 \)
-  \item Pulsazione caratteristica \( \omega = \sqrt{\dfrac{\alpha}{m}} \), con \( alpha \) coefficiente del quadrato di \( x \)
-  \item Autovalori \( E_n = \left( n + \dfrac{1}{2} \right) \, \hbar \omega \),  spaziatura \( \propto n \)
+  \item Profilo di potenziale \( U(x) = \dfrac{1}{2} \alpha x ^ 2 \)
+  \item Pulsazione caratteristica \( \displaystyle \omega = \sqrt{\dfrac{\alpha}{m}} \), con \( alpha \) coefficiente del quadrato di \( x \)
+  \item Autovalori \( E_n = \left( n + \dfrac{1}{2} \right) \hbar \omega \),  spaziatura \( \propto n \)
 \end{itemize}
-
-\newpage
 
 \subsubsection{Coppie di buche}
 \begin{itemize}
@@ -259,7 +271,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
   \item Soluzioni della funzione:
         \begin{itemize}
           \item Pari \( \tan \left( ka \right) = 0 \)
-          \item Dispari \( \tan \left( ka \right) = - \dfrac{\hbar ^ 2 k}{m_0 u_0}  \)
+          \item Dispari \( \tan \left( ka \right) = - \dfrac{\hbar ^ 2 k}{m u_0}  \)
         \end{itemize}
   \item Proporzionalità della ddp \( \left| \psi \right| ^ 2 \propto \cos \left( \dfrac{E_2 - E_1}{\hbar} t \right) = \cos \left( 2 \pi \dfrac{E_2 - E_1}{h} t \right)  \)
         \begin{itemize}
@@ -267,6 +279,8 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
           \item Frequenza degli autovalori \( \nu = \dfrac{E_2 - E_1}{h} \)
         \end{itemize}
 \end{itemize}
+
+\newpage
 
 \section{Teoria semi classica del trasporto}
 \begin{itemize}
@@ -283,7 +297,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
   \item Libero cammino medio \( \lambda = v_{th} \cdot \tau_m \)
   \item Modello di Drude:
         \begin{itemize}
-          \item Formula \( \dfrac{dk}{dt} + \dfrac{k}{\tau_m}= \dfrac{F}{\hbar} \) \textbf{vale solo per gli elettroni}
+          \item Formula \( \dfrac{dk}{dt} + \dfrac{k}{\tau_m}= \dfrac{F}{\hbar} \) \textbf{valida solo per gli elettroni}
           \item Soluzione generale \( k = \dfrac{q \tau_m F}{\hbar} \left( 1 - e^{\sfrac{t}{\tau_m}} \right) \)
           \item Soluzione stazionaria \( \dfrac{\partial k}{\partial t} = 0 \rightarrow \bar{k} = \dfrac{q F}{\hbar} \tau_m \)
         \end{itemize}
@@ -299,38 +313,42 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
         \end{itemize}
 \end{itemize}
 
+\newpage
+
 \subsubsection{Semiconduttori}
 \begin{itemize}
-  \item Distribuzione di Fermi \( f(E) = \dfrac{1}{1+e^{\dfrac{E-E_F}{kT}}} \)
   \item Densità di stati di energia:
         \begin{itemize}
           \item Caso 1D \( \displaystyle g(E) = \dfrac{1}{\pi \hbar} \sqrt{\dfrac{2 \, m_{DOS}^\star}{E-E_F}} \)
           \item Caso 2D \( g(E) = \dfrac{m_{DOS}^\star}{\pi \hbar} \)
-          \item Caso 3D \( \displaystyle g(E) = \dfrac{(2 \, m_{DOS}^\star) ^ {\sfrac{3}{2}}}{2 \pi^2 \hbar^3} \sqrt{E-E_F} \)
+          \item Caso 3D \( \displaystyle g(E) = \dfrac{(2 \, m_{DOS}^\star) ^ {\sfrac{3}{2}}}{3 \pi^2 \hbar^3} \sqrt{E-E_F} \)
         \end{itemize}
   \item Densità di portatori:
         \begin{itemize}
           \item Densità efficace di stati:
                 \begin{itemize}
-                  \item In banda di conduzione \( N_c = \dfrac{2}{h ^ 3} \left(2 \pi \, m^{\star}_{DOS_n} \, k T \right) ^ {\sfrac{3}{2}} \approx 10 ^ {19} \)
-                  \item In banda di valenza \( N_v = \dfrac{2}{h ^ 3} \left(2 \pi \, m^{\star}_{DOS_p} \, k T \right) ^ {\sfrac{3}{2}} \approx 10 ^ {19} \)
+                  \item In banda di conduzione \( N_c = \dfrac{1}{4 \hbar ^ 3} \left(\dfrac{m^{\star}_{DOS_n} \, k T}{\pi} \right) ^ {\sfrac{3}{2}} \)
+                  \item In banda di valenza \( N_v = \dfrac{1}{4} \left( \dfrac{ m^{\star}_{DOS_p} \, k T}{\pi \hbar ^ 2} \right) ^ {\sfrac{3}{2}} \)
                 \end{itemize}
-          \item Concentrazione intrinseca \( \displaystyle n_i = \sqrt{N_c  N_v} e ^ {-\dfrac{E_{g}}{2kt}} \)
-          \item Elettroni \( \displaystyle n = \int\limits_{E_F}^{\infty} g(E) f(E) \, dE \approx N_c \cdot e ^ {-\dfrac{-E_c - E_f}{kt}} \)
-          \item Lacune \( \displaystyle p = \int\limits_{0}^{E_F} g(E) \left( 1- f(E) \right) \, dE \approx N_v \cdot e ^ {\dfrac{E_v - E_f}{kt}} \)
+          \item Concentrazione intrinseca \( \displaystyle n_i = \sqrt{N_c  N_v} \cdot e ^ {-\dfrac{E_{g}}{2kT}} \)
+          \item Elettroni \( \displaystyle n = \int\limits_{E_F}^{\infty} g(E) f(E) \, dE \approx N_c \cdot e ^ {-\dfrac{-E_c - E_f}{kT}} \)
+          \item Lacune \( \displaystyle p = \int\limits_{0}^{E_F} g(E) \left( 1- f(E) \right) \, dE \approx N_v \cdot e ^ {\dfrac{E_v - E_f}{kT}} \)
         \end{itemize}
   \item Concentrazione di drogante neutro:
         \begin{itemize}
-          \item Donore \( n_0 = \dfrac{n}{1 + \dfrac{1}{2} \, e^{\dfrac{E_n-E_f}{kt}}} \)
-          \item Accettore \( p_0 = \dfrac{p}{1 + \dfrac{1}{4} \, e^{\dfrac{E_f-E_p}{kt}}} \)
+          \item Donore \( n_0 = \dfrac{n}{1 + \dfrac{1}{2} \, e^{\dfrac{E_n-E_f}{kT}}} \)
+          \item Accettore \( p_0 = \dfrac{p}{1 + \dfrac{1}{4} \, e^{\dfrac{E_f-E_p}{kT}}} \)
         \end{itemize}
   \item Energia media dell'elettrone \( \displaystyle \left<E\,\right> = \dfrac{1}{n} \int\limits_{E_F}^{\inf} E \cdot g(E) f(E) \, dE \)
         \begin{itemize}
-          \item Caso 2D \(\left<E\,\right> = \dfrac{E_F}{2} \)
+          \item Caso 2D \(\left<E\,\right> = \dfrac{1}{2} E_F \)
           \item Caso 3D \(\left<E\,\right> = \dfrac{3}{5} E_F \)
         \end{itemize}
   \item Energia cinetica dell'elettrone \( E_k = \dfrac{\hbar^2 k^2}{2 m_n^\star} \)
   \item Legge di Matthiessen \( \dfrac{1}{\mu_n} = \dfrac{1}{\mu_{n, f}} + \dfrac{1}{\mu_{n, i}} \)
+
+        \newpage
+
   \item Saturazione della velocità:
         \begin{itemize}
           \item Velocità limite \( v_{\textnormal{sat}} = \sqrt{\dfrac{\hbar \, \omega_{0}}{2m^\star}} \)
@@ -340,21 +358,28 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
         \begin{itemize}
           \item Mobilità \( \dfrac{\mu (T_2)}{\mu (T_1)} = \left( \dfrac{T_2}{T_1} \right) ^ {-\sfrac{3}{2}} \)
           \item Densità di stati in banda \( \dfrac{N_c (T_2)}{N_c  (T_1)} = \left( \dfrac{T_2}{T_1} \right) ^ {\sfrac{3}{2}} \)
-          \item Densità intrinseca \( \dfrac{n_i (T_2)}{n_i (T_1)} = \left(\dfrac{T_2}{T_1}\right) ^ {\sfrac{3}{2}} e ^ {- \dfrac{E_g}{2 k} \left(\dfrac{1}{T_2} - \dfrac{1}{T_1} \right) } \)
-          \item Conducibilità \( \dfrac{\sigma (T_2)}{\sigma (T_1)} = e ^ {- \dfrac{E_g}{2 k} \left(\dfrac{1}{T_2} - \dfrac{1}{T_1} \right) } \)
+          \item Densità intrinseca \( \dfrac{n_i (T_2)}{n_i (T_1)} = \left(\dfrac{T_2}{T_1}\right) ^ {\sfrac{3}{2}} e ^ {- \dfrac{E_G}{2 k} \left(\dfrac{1}{T_2} - \dfrac{1}{T_1} \right) } \)
+          \item Conducibilità \( \dfrac{\sigma (T_2)}{\sigma (T_1)} = e ^ {- \dfrac{E_G}{2 k} \left(\dfrac{1}{T_2} - \dfrac{1}{T_1} \right) } \)
         \end{itemize}
 \end{itemize}
 
 \subsection{Weak binding}
 \begin{itemize}
-  \item Valore di aspettazione dell'energia al margine della funzione di Brillouin \( < E > = \dfrac{\hbar ^ 2}{2 m} \left(\dfrac{\pi}{a}\right) ^ 2 = E_n^+ - | u_n | \)
+  \item Valore di aspettazione dell'energia \( \langle E \rangle = \dfrac{\hbar ^ 2}{2 m} \left(\dfrac{\pi}{a}\right) ^ 2 = E_n^+ - | u_n | \)
 \end{itemize}
 
 \subsubsection{Metalli}
 \begin{itemize}
-  \item Energia di Fermi \( E_F(T) = E_F(0 K) \left[ 1 - \dfrac{\pi ^ 2}{12} \left( \dfrac{kT}{E_F(0 K)}\right) ^ 2\right]\)
-  \item Densità di portatori \textbf{approssimazione} \( n \approx \int\limits_{0}^{E_F} g(E) dE \)
+  \item Energia di Fermi \( E_F(T) = E_F(0 \, K) \cdot \left[ 1 - \dfrac{\pi ^ 2}{12} \left( \dfrac{kT}{E_F(0 \, K)}\right) ^ 2\right]\)
+  \item Densità di portatori \textbf{approssimazione:}
+        \begin{itemize}
+          \item \( \displaystyle n \approx \int\limits_{0}^{E_F} g(E) dE \)
+          \item \( p = 0 \)
+        \end{itemize}
+  \item Temperatura di Fermi \( T_{F} = \dfrac{E_F}{k T} \)
 \end{itemize}
+
+\newpage
 
 \subsection{Formule valide sia per lacune che per elettroni}
 \begin{itemize}
@@ -368,13 +393,22 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 \subsection{Livelli di energia}
 \begin{itemize}
   \item Livello di Fermi \( E_f = \dfrac{ \left(3 \pi^2 n\right)^{\sfrac{2}{3}} }{2 m_n^*} \hbar ^ 2 \)
-  \item Livello di energia intrinseco \( E_i = \dfrac{E_C + E_V}{2} + \dfrac{K T}{2} \ln\left( \dfrac{m_p^*}{m_n^*}\right) \)
+  \item Livello di energia intrinseco \( E_i  = \dfrac{E_G}{2} + \dfrac{kT}{q} \ln \left( \dfrac{N_c}{N_v}\right) \)
 \end{itemize}
 
 \section{Correnti macroscopiche}
 \begin{itemize}
-  \item Effetto termoionico \( J = A T ^ 2 e ^ {-\dfrac{w}{kt}} \), \( A = \dfrac{4 \pi m ^ \star q k ^2}{h ^ 3} \)
-  \item Equazione di continuità della corrente \( \dfrac{\partial n}{\partial t} = \dfrac{1}{q} \dfrac{\partial J_n}{\partial x} + g_n - r_n \), \( \dfrac{\partial p}{\partial t} =  -\dfrac{1}{q} \dfrac{\partial J_p}{\partial x} + g_n - r_n  \)
+  \item Effetto termoionico \( \displaystyle J = A T ^ 2  \, e ^ {-\dfrac{w}{kT}} \), \( A = \dfrac{4 \pi m ^ \star q k ^2}{h ^ 3} \)
+  \item Equazione di continuità della corrente:
+        \begin{itemize}
+          \item Elettroni  \( \dfrac{\partial n}{\partial t} = \dfrac{1}{q} \dfrac{\partial J_n}{\partial x} + g_n - r_n \)
+          \item Lacune \( \dfrac{\partial p}{\partial t} =  -\dfrac{1}{q} \dfrac{\partial J_p}{\partial x} + g_p - r_p \)
+        \end{itemize}
+  \item Tasso di ricombinazione:
+        \begin{itemize}
+          \item Elettroni \( r_n = \dfrac{n - n_0}{\tau_n} \)
+          \item Lacune \( r_p = \dfrac{p - p_0}{\tau_p} \)
+        \end{itemize}
 \end{itemize}
 
 
@@ -394,8 +428,8 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 
 \section{Distribuzioni}
 \begin{itemize}
-  \item Fermi Dirac \( f_{FD} (e) = \dfrac{1}{1 + e ^{\dfrac{E - E_f}{kt}}} \)
-  \item Maxwell Boltzmann \( f_{MB} (e) = e ^ {-\dfrac{E - E_f}{kt}} \)
+  \item Fermi Dirac \( f_{FD} (e) = \dfrac{1}{1 + e ^{\dfrac{E - E_f}{kT}}} \)
+  \item Maxwell Boltzmann \( f_{MB} (e) = e ^ {-\dfrac{E - E_f}{kT}} \)
 \end{itemize}
 
 \end{document}
