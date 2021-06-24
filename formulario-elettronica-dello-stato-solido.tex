@@ -47,7 +47,7 @@
   \vspace{18em}
   \centerline{Quest'opera è distribuita con Licenza Creative Commons Attribuzione}
   \centerline{Non commerciale 4.0 Internazionale \ccbynceu}
-  \centerline{Versione aggiornata al 22/06/2021}
+  \centerline{Versione aggiornata al 24/06/2021}
 \end{doublespacing}
 \newpage
 
@@ -141,7 +141,7 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item Energia associata ad un'onda \( E = h \nu = \hbar \omega \)
   \item Vettore d'onda \( k = \dfrac{2 \pi}{h} \)
   \item Velocità di fase \( v_f = \dfrac{d \omega}{d t}\)
-  \item Velocità di gruppo \( v_g = \dfrac{\partial \omega}{\partial k} = \dfrac{1}{\hbar} \dfrac{\partial E}{\partial k} =\dfrac{\hbar k}{m} \)
+  \item Velocità di gruppo \( v_g = \dfrac{\partial \, \omega}{\partial k} = \dfrac{1}{\hbar} \dfrac{\partial E}{\partial k} =\dfrac{\hbar k}{m} \)
 \end{itemize}
 
 \subsubsection{Pacchetti d'onda}
@@ -151,7 +151,7 @@ In questo formulario ho cercato prima di tutto di mettere le formule importanti 
   \item Deviazione standard \( \sigma_x (t) = \sqrt{ \dfrac{\alpha^2 + \beta^2 t^2}{\alpha} } \)
   \item Pacchetto gaussiano:
         \begin{itemize}
-          \item Velocità \( v_g = \dfrac{\partial \omega}{\partial k} \)
+          \item Velocità \( v_g = \dfrac{\partial \, \omega}{\partial k} \)
           \item Dispersione \(\beta = \dfrac{1}{2} \dfrac{\partial ^ 2 E}{\partial ^ 2 k} \)
           \item Oscillazione \( \omega = \omega_0 + v_g \cdot (k - k_0) + \beta \cdot (k - k_o) ^ 2 \)
           \item Il picco si sposta con \( v = v_g \)
@@ -255,7 +255,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 
 \subsubsection{Coppie di buche}
 \begin{itemize}
-  \item Funzione degli autovalori \( \tan\left( k \dfrac{a}{2} \right) = - \dfrac{\hbar ^2 k}{m U_0} \)
+  \item Funzione degli autovalori \( \tan\left( k \dfrac{a}{2} \right) = - \dfrac{\hbar ^2 k}{m u_0} \)
   \item Soluzioni della funzione:
         \begin{itemize}
           \item Pari \( \tan \left( ka \right) = 0 \)
@@ -276,6 +276,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
 
 \subsection{Tight Binding}
 \begin{itemize}
+  \item Velocità di gruppo dell'elettrone \( v_g = \dfrac{1}{\hbar} \dfrac{\partial E}{\partial k} \)
   \item Massa efficace dell'elettrone \( m ^ \ast = \dfrac{ \mathfrak{F} }{a} = \dfrac{\hbar ^ 2}{\dfrac{\partial ^ 2 E}{\partial k ^ 2}} \)
   \item Relazione di dispersione \( E(k) = E_{0-} + 2 \gamma \cos(ka) \)
   \item Oscillazioni di Bloch \( \omega = \dfrac{a q F}{\hbar} \), \( \nu = \dfrac{a q F}{h} \)
@@ -303,14 +304,17 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
   \item Distribuzione di Fermi \( f(E) = \dfrac{1}{1+e^{\dfrac{E-E_F}{kT}}} \)
   \item Densità di stati di energia:
         \begin{itemize}
-          \item Caso 1D \( \displaystyle g(E) = \dfrac{1}{\pi \hbar} \sqrt{\dfrac{2 m_{DOS}^\star}{E-E_F}} \)
-          \item Caso 2D \( g(E) = \dfrac{m_{DOS}^\star}{\hbar^ 2 \pi} \)
-          \item Caso 3D \( \displaystyle g(E) = \dfrac{(2 m_{DOS}^\star) ^ {\sfrac{3}{2}}}{2 \pi^2 \hbar^3} \sqrt{E-E_F} \)
+          \item Caso 1D \( \displaystyle g(E) = \dfrac{1}{\pi \hbar} \sqrt{\dfrac{2 \, m_{DOS}^\star}{E-E_F}} \)
+          \item Caso 2D \( g(E) = \dfrac{m_{DOS}^\star}{\pi \hbar} \)
+          \item Caso 3D \( \displaystyle g(E) = \dfrac{(2 \, m_{DOS}^\star) ^ {\sfrac{3}{2}}}{2 \pi^2 \hbar^3} \sqrt{E-E_F} \)
         \end{itemize}
   \item Densità di portatori:
         \begin{itemize}
-          \item  \( N_c = \dfrac{2}{h ^ 3} \left(2 \pi m^{\star}_{DOS_n} k T \right) ^ {\sfrac{3}{2}} \approx 10 ^ {19} \)
-          \item \( N_v = \dfrac{2}{h ^ 3} \left(2 \pi m^{\star}_{DOS_p} k T \right) ^ {\sfrac{3}{2}} \approx 10 ^ {19} \)
+          \item Densità efficace di stati:
+                \begin{itemize}
+                  \item In banda di conduzione \( N_c = \dfrac{2}{h ^ 3} \left(2 \pi \, m^{\star}_{DOS_n} \, k T \right) ^ {\sfrac{3}{2}} \approx 10 ^ {19} \)
+                  \item In banda di valenza \( N_v = \dfrac{2}{h ^ 3} \left(2 \pi \, m^{\star}_{DOS_p} \, k T \right) ^ {\sfrac{3}{2}} \approx 10 ^ {19} \)
+                \end{itemize}
           \item Concentrazione intrinseca \( \displaystyle n_i = \sqrt{N_c  N_v} e ^ {-\dfrac{E_{g}}{2kt}} \)
           \item Elettroni \( \displaystyle n = \int\limits_{E_F}^{\infty} g(E) f(E) \, dE \approx N_c \cdot e ^ {-\dfrac{-E_c - E_f}{kt}} \)
           \item Lacune \( \displaystyle p = \int\limits_{0}^{E_F} g(E) \left( 1- f(E) \right) \, dE \approx N_v \cdot e ^ {\dfrac{E_v - E_f}{kt}} \)
@@ -335,7 +339,7 @@ Inoltre \( \psi(x+a) = u_k (x+a) e^{ikx} e^{ika} \), con \( e^{ika} \) sfasament
   \item Rapporto delle grandezze al variare della temperatura:
         \begin{itemize}
           \item Mobilità \( \dfrac{\mu (T_2)}{\mu (T_1)} = \left( \dfrac{T_2}{T_1} \right) ^ {-\sfrac{3}{2}} \)
-          \item Nc \( \dfrac{N_c (T_2)}{N_c  (T_1)} = \left( \dfrac{T_2}{T_1} \right) ^ {\sfrac{3}{2}} \)
+          \item Densità di stati in banda \( \dfrac{N_c (T_2)}{N_c  (T_1)} = \left( \dfrac{T_2}{T_1} \right) ^ {\sfrac{3}{2}} \)
           \item Densità intrinseca \( \dfrac{n_i (T_2)}{n_i (T_1)} = \left(\dfrac{T_2}{T_1}\right) ^ {\sfrac{3}{2}} e ^ {- \dfrac{E_g}{2 k} \left(\dfrac{1}{T_2} - \dfrac{1}{T_1} \right) } \)
           \item Conducibilità \( \dfrac{\sigma (T_2)}{\sigma (T_1)} = e ^ {- \dfrac{E_g}{2 k} \left(\dfrac{1}{T_2} - \dfrac{1}{T_1} \right) } \)
         \end{itemize}
